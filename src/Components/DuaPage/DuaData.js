@@ -4,12 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 const DuaData = ({ items }) => {
+    if (!items) {
+        return false
+    }
     const { item, duas } = items?.data;
     // const {subcat_name_en}=item
-    console.log(duas)
+    // console.log(duas)
     return (
-        <div className="w-[700px] pt-4">
-            <h2 id="subcat_id" className=" p-4 my-4 rounded-xl text-base font-semibold bg-white"><span className="text-[#1FA45B]">Section:</span> {item?.subcat_name_en}</h2>
+        <div id={`sub${item?.subcat_id}`} className="w-[700px] pt-4">
+            <h2 className=" p-4 my-4 rounded-xl text-base font-semibold bg-white"><span className="text-[#1FA45B]">Section:</span> {item?.subcat_name_en}</h2>
             {
                 duas.map((item, index) => <div className="bg-white rounded-xl p-4 my-4" key={item?._id}>
                     <h3 className="bg-white flex justify-start items-center font-semibold text-base gap-5 text-[#1FA45B]">

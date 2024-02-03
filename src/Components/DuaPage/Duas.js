@@ -4,7 +4,7 @@ import DuaData from './DuaData'
 const Duas = ({duaData}) => {
     
   return (
-    <div className='h-screen overflow-auto  pt-4 box-border'>
+    <div className='h-screen overflow-auto  pt-4 box-border scroll-smooth'>
       {
         duaData.map(item=> <DuaData key={item?.item?._id} items={item} />)
       }

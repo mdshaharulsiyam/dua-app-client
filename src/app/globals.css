@@ -17,3 +17,22 @@
     top: 50%;
     transform: translateY(-50%);
 }
+.themeChanger{
+    width: 40px;
+    height: 12px;
+    background: #D4D4D4;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+.themeChanger::before{
+    content: '';
+    position: absolute;
+    background: #A4A4A4;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
