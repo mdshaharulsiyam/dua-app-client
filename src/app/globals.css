@@ -9,7 +9,7 @@
 .subCategory::before{
     position: absolute;
     content: '';
-    background: lawngreen;
+    background: #1FA45B;
     height: 8px;
     width: 8px;
     border-radius: 100%;

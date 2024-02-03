@@ -18,7 +18,7 @@ const CategoryButton = ({ item, category, cattegoruId, setcattegoruId }) => {
                 <span className='flex justify-start items-center gap-2'>
                     <Image src='https://i.ibb.co/0MrW2Gh/005-fever.png' height={60} width={60} alt='image' />
                     <span>
-                        <h3 className={`font-semibold ${category === cat_name_en ? 'text-green-700' : 'text-black'}`}>{cat_name_en}</h3>
+                        <h3 className={`font-semibold ${category === cat_name_en ? 'text-[#1FA45B]' : 'text-black'}`}>{cat_name_en}</h3>
                         <p className='text-sm'>Subcategory : {no_of_subcat}</p>
                     </span>
                 </span>
@@ -29,7 +29,7 @@ const CategoryButton = ({ item, category, cattegoruId, setcattegoruId }) => {
 
             </div>
             {
-                cattegoruId === cat_id && <div className=' pl-5 ml-5 border-l-2 border-dotted border-l-lime-700'>
+                cattegoruId === cat_id && <div className=' pl-5 ml-5 border-l-2 border-dotted border-l-[#1FA45B]'>
                     {
                         subcategoryData.map(item => <Link  href={'#'} key={item?._id} className='block my-3 subCategory'>
                             {

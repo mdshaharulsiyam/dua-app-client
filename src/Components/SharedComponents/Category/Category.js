@@ -23,7 +23,7 @@ const Category = ({ category }) => {
     // console.log(data)
     const [cattegoruId, setcattegoruId] = useState('')
     return (
-        <div className='w-[400px] rounded-lg bg-white  mt-5 '>
+        <div className='w-[400px] rounded-lg bg-white  mt-5 h-screen overflow-auto'>
             <p className='text-base mb-3 text-center font-semibold py-2 w-full text-white rounded-t-[8px] bg-[#1FA45B]'>Categories</p>
             <form className="flex items-center w-[320px] mx-auto justify-center gap-1 border bg-white p-1 pl-4 rounded-md">
                 <button className="p-2 rounded-md" type="submit">
