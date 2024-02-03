@@ -3,10 +3,10 @@ import Image from "next/image";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoSettingsSharp } from "react-icons/io5";
 const Home = async({ searchParams })=> {
-  const category = searchParams?.category
+  const {category,cat_id} = searchParams
   console.log(category)
   return (
-    <div style={{scrollbarWidth: 'none'}} className="w-[88%] h-screen overflow-auto">
+    <div style={{scrollbarWidth: 'none'}} className="w-[91%] h-screen overflow-auto">
       <div className="flex justify-between items-center">
       <p className="text-[#393939] text-3xl font-semibold">Duas Page</p>
         <span className="flex justify-between items-center gap-20">
@@ -18,7 +18,7 @@ const Home = async({ searchParams })=> {
           </form>
           <span className="flex justify-center items-center gap-6">
             <button>
-              <Image src='https://i.ibb.co/NT7zNqv/Vector-9.png' height={50} width={50} />
+              <Image src='https://i.ibb.co/NT7zNqv/Vector-9.png' height={50} width={50}  alt="image"/>
             </button>
             <button className="text-2xl text-green-600 hidden">
               <IoSettingsSharp />
@@ -27,7 +27,7 @@ const Home = async({ searchParams })=> {
         </span>
       </div>
       <div>
-        <Category category={category} />
+        <Category cat_id={cat_id} category={category} />
       </div>
     </div>
   );

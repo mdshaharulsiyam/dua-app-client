@@ -3,3 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.subCategory{
+    position: relative;
+}
+.subCategory::before{
+    position: absolute;
+    content: '';
+    background: lawngreen;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
