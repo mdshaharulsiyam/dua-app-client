@@ -17,28 +17,39 @@ const DuaData = ({ items }) => {
                         <Image src='https://i.ibb.co/jJjBrMh/allah-1-Traced.png' height={50} width={50} alt='image' />
                         {index + 1} .{item?.dua_name_en}
                     </h3>
-                    <p className="text-[#393939] py-7">{item?.top_en}</p>
+                    <p className="text-[#393939] py-3">{item?.top_en}</p>
+                    <p className="text-[#393939] py-3">{item?.dua_arabic}</p>
+                    {
+                        item?.transliteration_en && <p className="text-[#393939] py-3 italic"><span className="font-semibold not-italic">Transliteration :</span> {item?.transliteration_en}</p>
+                    }
+                    {
+                        item?.translation_en && <p className="text-[#393939] py-3 "><span className="font-semibold">Translation :</span> {item?.translation_en}</p>
+                    }
+
                     <p className="font-semibold text-[#393939]">
                         <span className="text-[#1FA45B] block">Reference : </span>
                         {item?.refference_en}</p>
-                    <span className="w-full flex justify-end items-center pt-8 pb-4 gap-6">
-                        <Link href={'#'}>
-                            <Image src='https://i.ibb.co/jfbwQdM/Vector-10.png' height={20} width={20} alt='image' />
-                        </Link>
-                        <Link href={'#'}>
-                        <Image src='https://i.ibb.co/2qfXMWq/Vector-11.png' height={20} width={20} alt='image' />
-                        </Link>
-                        <Link href={'#'}>
-                        <Image src='https://i.ibb.co/RYkPX9k/Frame.png' height={20} width={20} alt='image' />
-                        </Link>
-                        <Link href={'#'}>
-                        <Image src='https://i.ibb.co/C77y9Vq/share-1.png' height={20} width={20} alt='image' />
-                        </Link>
-                        <Link href={'#'}>
-                        <Image src='https://i.ibb.co/WF2Yk03/report-1.png' height={20} width={20} alt='image' />
-                        </Link>
+                    <div className="flex justify-between items-center pt-12 pb-4">
+                        <audio src={item?.audio} controls></audio>
+                        <span className="w-full flex justify-end items-center gap-6">
+                            <Link href={'#'}>
+                                <Image src='https://i.ibb.co/jfbwQdM/Vector-10.png' height={20} width={20} alt='image' />
+                            </Link>
+                            <Link href={'#'}>
+                                <Image src='https://i.ibb.co/2qfXMWq/Vector-11.png' height={20} width={20} alt='image' />
+                            </Link>
+                            <Link href={'#'}>
+                                <Image src='https://i.ibb.co/RYkPX9k/Frame.png' height={20} width={20} alt='image' />
+                            </Link>
+                            <Link href={'#'}>
+                                <Image src='https://i.ibb.co/C77y9Vq/share-1.png' height={20} width={20} alt='image' />
+                            </Link>
+                            <Link href={'#'}>
+                                <Image src='https://i.ibb.co/WF2Yk03/report-1.png' height={20} width={20} alt='image' />
+                            </Link>
 
-                    </span>
+                        </span>
+                    </div>
                 </div>)
             }
 

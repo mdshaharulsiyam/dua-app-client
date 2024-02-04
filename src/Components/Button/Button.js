@@ -13,7 +13,7 @@ const Button = () => {
         //right-[-999999px]
 
     }
-    return <button onClick={() => showSideber()} className="text-2xl text-green-600">
+    return <button onClick={() => showSideber()} className="text-2xl text-green-600 2xl:hidden block">
         <IoSettingsSharp />
     </button>
 }

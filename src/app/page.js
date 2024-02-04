@@ -46,7 +46,7 @@ const Home = async ({ searchParams }) => {
         </span>
         <Category subcat_id={subcat_id} category={category} />
         <Duas duaData={duaData} />
-        <div id="setting" className="w-[320px] bg-white p-3 pt-1 rounded-2xl mt-9 h-screen overflow-auto absolute right-[-999999px] transition-all">
+        <div id="setting" className="w-[320px] bg-white p-3 pt-1 rounded-2xl mt-9 h-screen overflow-auto absolute right-[-999999px] 2xl:relative 2xl:right-0 transition-all">
           <p className="text-center text-xl font-bold pt-7">Settings</p>
           <ul className="flex justify-center items-start gap-3 flex-col">
             <li className="flex justify-start items-center gap-4 text-[#868686] p-3 w-full bg-[#F7F8FA]">
