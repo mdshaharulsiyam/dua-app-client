@@ -20,7 +20,6 @@ const Home = async ({ searchParams }) => {
     }
   })
   const duaData = await res.json()
-  // console.log(category)https://dua-server-eight.vercel.app
   return (
     <div style={{ scrollbarWidth: 'none' }} className="w-full ">
       <div className="flex justify-between items-center">

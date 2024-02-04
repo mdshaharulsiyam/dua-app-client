@@ -1,6 +1,4 @@
-/** @type {import('next').NextConfig} */
-// const withCSS = require('@zeit/next-css');
-// const compose = require('next-compose');
+/** @type {import('next').NextConfig} */;
 const nextConfig = {
   images: {
     remotePatterns: [

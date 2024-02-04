@@ -1,3 +1,8 @@
+
+#### [live link ](https://dua-app-client.vercel.app/)(https://dua-app-client.vercel.app/)
+#### [server link ](https://dua-server-eight.vercel.app/)(https://dua-server-eight.vercel.app/)
+#### [server github link ](https://github.com/mdshaharulsiyam/dua-app-server)(https://github.com/mdshaharulsiyam/dua-app-server)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
