@@ -8,10 +8,8 @@ const DuaData = ({ items }) => {
         return false
     }
     const { item, duas } = items?.data;
-    // const {subcat_name_en}=item
-    // console.log(duas)
     return (
-        <div id={`sub${item?.subcat_id}`} className="w-[700px] pt-4">
+        <div id={`sub${item?.subcat_id}`} className="xl:w-[700px] lg:w-[600px]  pt-4">
             <h2 className=" p-4 my-4 rounded-xl text-base font-semibold bg-white"><span className="text-[#1FA45B]">Section:</span> {item?.subcat_name_en}</h2>
             {
                 duas.map((item, index) => <div className="bg-white rounded-xl p-4 my-4" key={item?._id}>

@@ -13,10 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="container bg-[#EBEEF2] mt-6 mx-auto">
       <body className={``}>
-        <div className="flex justify-between items-start gap-[2%]">
+        <div className="flex justify-between items-start gap-[2%] relative h-screen overflow-hidden">
           <MainMenu />
           {children}
         </div>
+
       </body>
     </html>
   );
